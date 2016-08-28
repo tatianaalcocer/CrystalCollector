@@ -28,6 +28,11 @@ function randomizeCells() {
 	cell2 = Math.ceil(Math.random() * 12);
 	cell3 = Math.ceil(Math.random() * 12);
 	cell4 = Math.ceil(Math.random() * 12);
+	$("#crystal-cells__number1").html(cell1);
+	$("#crystal-cells__number2").html(cell2);
+	$("#crystal-cells__number3").html(cell3);
+	$("#crystal-cells__number4").html(cell4);
+	console.log(cell1, cell2, cell3, cell4);
 }
 
 function randomizeWinScore() {
@@ -76,17 +81,21 @@ randomizeCells();
 
  		case "crystals-cell-1": 
  			amount = cell1;
+ 			$("#crystal-cells__number1").addClass("crystal-cells__number--revealed");
  			break;
 
  		case "crystals-cell-2": 
  			amount = cell2;
+ 			$("#crystal-cells__number2").addClass("crystal-cells__number--revealed");
  			break;
 
  		case "crystals-cell-3":
  			amount = cell3;
+ 			$("#crystal-cells__number3").addClass("crystal-cells__number--revealed");
  			break;
 
  		case "crystals-cell-4": 
+ 			$("#crystal-cells__number4").addClass("crystal-cells__number--revealed");
  			amount = cell4;
  			break;
 

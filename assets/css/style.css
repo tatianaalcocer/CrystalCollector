@@ -55,7 +55,7 @@ body {
 	margin: 20px 0;
 	font-size: 0;
 	border-radius: 30px;
-    overflow: hidden;
+	overflow: hidden;
 
 }
 
@@ -72,68 +72,84 @@ body {
 	background: #FFFCFC;
 }
 
-	#active-score {
-		padding: 50px 50px;
-		text-align: center;
-		vertical-align: top;
-		font-family: 'Baloo Tamma', cursive;
-		color: #686868;
-		font-size: 20px;
-	}
+#active-score {
+	padding: 50px 50px;
+	text-align: center;
+	vertical-align: top;
+	font-family: 'Baloo Tamma', cursive;
+	color: #686868;
+	font-size: 20px;
+}
 
-	#win-score {
-		padding: 50px 0;
-		font-family: 'Baloo Tamma', cursive;
-		color: #686868;
-		font-size: 20px;
-		text-align: center;
+#win-score {
+	padding: 50px 0;
+	font-family: 'Baloo Tamma', cursive;
+	color: #686868;
+	font-size: 20px;
+	text-align: center;
 
-	}
+}
 
-	#meter {
+#meter {
 
-	}
+}
 
-	.crystals-block {
-		padding: 10px 10px;
-		background: #FFFCFC;
-	}
+.crystals-block {
+	padding: 10px 10px;
+	background: #FFFCFC;
+}
 
-	.crystals-cells {
-		display: inline-block;
-		padding: 10px 10px;
-		background: transparent;
-		width: 22%;
-		height: 22%;
-		vertical-align: top;
+.crystals-cells {
+	display: inline-block;
+	padding: 10px 10px;
+	background: transparent;
+	width: 22%;
+	height: 22%;
+	vertical-align: top;
 
-	}
+}
 
-	#crystals-cell-1 {
-		padding: 9px 10px;
-	}
+#crystals-cell-1 {
+	padding: 9px 10px;
+}
 
-	#crystals-cell-2 {
-		padding: 9.5px 10px;
-	}
+#crystals-cell-2 {
+	padding: 9.5px 10px;
+}
 
-	#crystals-cell-3 {
-		padding: 9px 10px;
-	}
+#crystals-cell-3 {
+	padding: 9px 10px;
+}
 
-	#crystals-cell-4 {
-		padding: 12px 10px;
-	}
+#crystals-cell-4 {
+	padding: 12px 10px;
+}
 
-	.crystal-cell img { 
-		width: 100%;
-	}
+.crystal-cell img { 
+	width: 100%;
+}
 
-	#running-score {
-		padding: 50px 50px;
-		text-align: center;
-		vertical-align: top;
-		font-family: 'Baloo Tamma', cursive;
-		color: #686868;
-		font-size: 20px;
-	}
+#running-score {
+	padding: 50px 50px;
+	text-align: center;
+	vertical-align: top;
+	font-family: 'Baloo Tamma', cursive;
+	color: #686868;
+	font-size: 20px;
+}
+
+.crystal-cells__number {
+	display: none;
+	text-align: center;
+	font-family: 'Baloo Tamma', cursive;
+	color: #686868;
+	font-size: 20px;
+}
+
+.crystal-cells__number--revealed {
+	display: block;
+}
+
+
+
+
