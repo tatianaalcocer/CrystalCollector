@@ -1,0 +1,98 @@
+* {
+	position: relative;
+	box-sizing: border-box;
+}
+
+
+p {
+	text-align: center;
+}
+
+body {
+	padding: 0 50px;
+}
+
+.banner-container {
+	padding: 20px 20px;
+	margin: 20px 0;
+	background: #ddd;
+	font-family: 'Baloo Tamma', cursive;
+	font-size: 60px;
+}
+
+.instructions-container {
+	padding: 20px 250px;
+	margin: 20px 0;
+	background: #ddd;
+	font-family: 'Exo 2', sans-serif;
+	font-size: 20px;
+
+}
+
+.main-col {
+	display: inline-block;
+	width: 33.3%;
+	text-align: center;
+	background: #ddd;
+	font-size: 16px;
+	min-height: 300px;
+	vertical-align: top;
+}
+
+.main-container {
+	width: 100%;
+	display: inline-block;
+	margin: 20px 0;
+	font-size: 0;
+
+}
+
+.crystals-row-1 {
+	font-family: 'Baloo Tamma', cursive;
+	font-size: 20px;
+}
+
+.crystals-main {
+	padding: 20px 20px;
+	text-align: center;
+	background: #ddd;
+}
+
+	#active-score {
+		padding: 50px 50px;
+		text-align: center;
+		vertical-align: top;
+		font-family: 'Baloo Tamma', cursive;
+		font-size: 20px;
+	}
+
+	#win-score {
+		padding: 50px 0;
+		font-family: 'Baloo Tamma', cursive;
+		font-size: 20px;
+		text-align: center;
+
+	}
+
+	#meter {
+
+	}
+
+	.crystals-block {
+		padding: 10px 10px;
+		background: #ddd;
+	}
+
+	.crystals-cells {
+		display: inline-block;
+		padding: 10px 10px;
+		background: #aaa;
+	}
+
+	#running-score {
+		padding: 50px 50px;
+		text-align: center;
+		vertical-align: top;
+		font-family: 'Baloo Tamma', cursive;
+		font-size: 20px;
+	}

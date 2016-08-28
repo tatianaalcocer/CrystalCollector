@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+// TO DO: 
+// write a function for updating the active scores
+
+
 
 // Generate a random number, store it in a variable
 var score = 0;
@@ -28,6 +32,7 @@ function randomizeCells() {
 
 function randomizeWinScore() {
 	winScore = Math.ceil(Math.random() * scoreGoalMax - scoreGoalMin) + scoreGoalMin;
+	$("#win-score").html("WINNING NUMBER: " + "<br/>" + winScore);
 }
 
 
@@ -93,8 +98,12 @@ randomizeCells();
  	// UPDATE SCORE WITH VALUE OF CELL CLICKED (AMOUNT)
  	score = updateScore(score, amount);
 
+ 	//UPDATE WIN-NUMBER ON SCREEN: 
+ 	$("#win-score").html("WINNING NUMBER: " + "<br/>" + winScore);
+
+
     // UPDATE #ACTIVE SCORE DIV WITH UPDATED SCORE 
-    $('#active-score').html("ACTIVE SCORE: " + score);
+    $('#active-score').html("ACTIVE SCORE: " + "<br/>" + score);
 
 
 
@@ -109,7 +118,7 @@ randomizeCells();
 
    		// Reset score to 0, print new active score
    		score = 0;
-   		$('#active-score').html("ACTIVE SCORE: " + score);
+   		$('#active-score').html("ACTIVE SCORE: " + "<br/>" + score);
 
    		//Randomize cells and winScore
    		randomizeCells();
@@ -126,7 +135,7 @@ randomizeCells();
 
    		// Reset the score to 0, print new active score, randomize cells
    		score = 0;
-   		$('#active-score').html("ACTIVE SCORE: " + score);
+   		$('#active-score').html("ACTIVE SCORE: " + "<br/>" + score);
    		
    		//Randomize cells and winScore
    		randomizeCells();

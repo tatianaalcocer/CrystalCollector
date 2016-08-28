@@ -17,14 +17,13 @@
 	<!-- Latest compiled and minified JavaScript --> 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<!-- Sweet Alert -->
-	<!-- http://t4t5.github.io/sweetalert/ -->
-	<!-- <script src="assets/sweetalert-master/dist/sweetalert.min.js"></script> <link rel="stylesheet" type="text/css" href="assets/sweetalert-master/dist/sweetalert.css"> -->
-
-
-
+	<!-- FONT FOR BODY -->
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Exo+2:200" rel="stylesheet">
+	
+	<!-- STYLE SHEETS -->
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
 
@@ -33,25 +32,42 @@
 	</div> <!-- END OF BANNER -->
 
 	<div class="instructions-container">
-		<p>INSTRUCTIONS</p>
+		<p>INSTRUCTIONS:</p>
+		
+		<br/>
+
+		<p>At the beginning of every round, there will be a randomly assigned winning number, and each crystal will have a randomly assigned value. Try clicking the crystals to match the winning number!</p> 
+
+		<p>Be careful not to go over! </p>
 	</div> <!-- END OF INSTRUCTIONS -->
 
 	
 	<div class="main-container">
-		<div id="active-score">
-		ACTIVE SCORE: 
-		</div> <!-- END OF ACTIVE-SCORE -->
+		<div class="scores main-col">
+
+			<div id="active-score">
+				ACTIVE SCORE: 
+				<br/>
+				&nbsp; <!-- non breaking space -->
+			</div> <!-- END OF ACTIVE-SCORE -->
+
+			<div id="win-score">
+				WINNING NUMBER: 
+				<br/>
+				&nbsp; <!-- non breaking space --> 
+			</div> <!-- END OF WIN-SCORE -->
+
+		</div> <!-- END OF SCORES -->
 
 
-
-		<div class="crystals-main">
+		<div class="crystals-main main-col">
 
 			<div class="crystals-row-1">
-			<h2>Crystals</h2>
+				<h2>Crystals</h2>
 			</div> <!-- END OF CRYSTALS ROW 1 -->
 
 
-			<div class="meter">
+			<div id="meter" class="">
 			</div> <!-- END OF METER -->
 
 
@@ -78,8 +94,12 @@
 
 		</div> <!-- END OF CRYSTALS MAIN -->
 
-		<div id="running-score">
-		RUNNING SCORE: 
+		<div id="running-score" class="main-col">
+		WINS: 
+		<br/>
+		LOSSES: 
+		<br/>
+		&nbsp; <!-- non breaking space --> 
 		</div> <!-- END OF RUNNING-SCORE -->
 
 
