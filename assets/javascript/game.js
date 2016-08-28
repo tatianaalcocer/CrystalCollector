@@ -63,10 +63,20 @@ function renderRunningScore(winCount, lossCount) {
 	$("#running-score").html("WINS: " + winCount + "<br/>" + "LOSSES: " + lossCount);
 }
 
+function clearNumber() {
+	console.log($(".crystal-cells__number"))
+	$(".crystal-cells__number").removeClass("crystal-cells__number--revealed");
+}
+
+function initializeGame() {
+	randomizeWinScore();
+	randomizeCells();
+	clearNumber();
+}
+
 
 // SET THE WIN SCORE AND VALUE OF THE CRYSTAL CELLS: 
-randomizeWinScore();
-randomizeCells();
+initializeGame();
 
 
 // ON CLICK EVENT OF CRYSTALS CELLS: 
@@ -129,9 +139,8 @@ randomizeCells();
    		score = 0;
    		$('#active-score').html("ACTIVE SCORE: " + "<br/>" + score);
 
-   		//Randomize cells and winScore
-   		randomizeCells();
-   		randomizeWinScore();
+   		//Randomize cells and winScore, clear numbers
+   		initializeGame();
 
 
    	// If you lose...
@@ -146,9 +155,8 @@ randomizeCells();
    		score = 0;
    		$('#active-score').html("ACTIVE SCORE: " + "<br/>" + score);
    		
-   		//Randomize cells and winScore
-   		randomizeCells();
-   		randomizeWinScore();
+   		//Randomize cells and winScore, clear numbers
+   		initializeGame();
 
    	// If 'continue', nothing happens 
    	} else if (checkWin(winScore, score) == "continue") {
