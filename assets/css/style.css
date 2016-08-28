@@ -10,30 +10,40 @@ p {
 
 body {
 	padding: 0 50px;
+	background: url("../images/bg.png");
 }
 
 .banner-container {
 	padding: 20px 20px;
 	margin: 20px 0;
-	background: #ddd;
+	background: #FFFCFC;
+	color: #A86F8E;
 	font-family: 'Baloo Tamma', cursive;
 	font-size: 60px;
+	border-radius: 30px;
+
 }
 
 .instructions-container {
-	padding: 20px 250px;
-	margin: 20px 0;
-	background: #ddd;
+	padding: 0 250px;
+	background: transparent;
 	font-family: 'Exo 2', sans-serif;
+	color: #A86F8E;
 	font-size: 20px;
 
+}
+
+.instructions {
+	background: #FFFCFC;
+	padding: 20px;
+	border-radius: 30px;
 }
 
 .main-col {
 	display: inline-block;
 	width: 33.3%;
 	text-align: center;
-	background: #ddd;
+	background: #FFFCFC;
 	font-size: 16px;
 	min-height: 300px;
 	vertical-align: top;
@@ -44,18 +54,22 @@ body {
 	display: inline-block;
 	margin: 20px 0;
 	font-size: 0;
+	border-radius: 30px;
+    overflow: hidden;
 
 }
 
 .crystals-row-1 {
 	font-family: 'Baloo Tamma', cursive;
+	color: #686868;
 	font-size: 20px;
+	padding: 20px;
 }
 
 .crystals-main {
 	padding: 20px 20px;
 	text-align: center;
-	background: #ddd;
+	background: #FFFCFC;
 }
 
 	#active-score {
@@ -63,12 +77,14 @@ body {
 		text-align: center;
 		vertical-align: top;
 		font-family: 'Baloo Tamma', cursive;
+		color: #686868;
 		font-size: 20px;
 	}
 
 	#win-score {
 		padding: 50px 0;
 		font-family: 'Baloo Tamma', cursive;
+		color: #686868;
 		font-size: 20px;
 		text-align: center;
 
@@ -80,13 +96,37 @@ body {
 
 	.crystals-block {
 		padding: 10px 10px;
-		background: #ddd;
+		background: #FFFCFC;
 	}
 
 	.crystals-cells {
 		display: inline-block;
 		padding: 10px 10px;
-		background: #aaa;
+		background: transparent;
+		width: 22%;
+		height: 22%;
+		vertical-align: top;
+
+	}
+
+	#crystals-cell-1 {
+		padding: 9px 10px;
+	}
+
+	#crystals-cell-2 {
+		padding: 9.5px 10px;
+	}
+
+	#crystals-cell-3 {
+		padding: 9px 10px;
+	}
+
+	#crystals-cell-4 {
+		padding: 12px 10px;
+	}
+
+	.crystal-cell img { 
+		width: 100%;
 	}
 
 	#running-score {
@@ -94,5 +134,6 @@ body {
 		text-align: center;
 		vertical-align: top;
 		font-family: 'Baloo Tamma', cursive;
+		color: #686868;
 		font-size: 20px;
 	}
