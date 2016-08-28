@@ -8,16 +8,29 @@ var lossCount = 0;
 var scoreGoalMax = 120;
 var scoreGoalMin = 19;
 
-var cell1 = Math.ceil(Math.random() * 12); 
-var cell2 = Math.ceil(Math.random() * 12);
-var cell3 = Math.ceil(Math.random() * 12);
-var cell4 = Math.ceil(Math.random() * 12);
+var cell1 = 0;
+var cell2 = 0;
+var cell3 = 0;
+var cell4 = 0;
 
-var winScore = Math.ceil(Math.random() * scoreGoalMax - scoreGoalMin) + scoreGoalMin;
+var winScore = 0;
 
 
 
 // FUNCTIONS: 
+
+function randomizeCells() {
+	cell1 = Math.ceil(Math.random() * 12); 
+	cell2 = Math.ceil(Math.random() * 12);
+	cell3 = Math.ceil(Math.random() * 12);
+	cell4 = Math.ceil(Math.random() * 12);
+}
+
+function randomizeWinScore() {
+	winScore = Math.ceil(Math.random() * scoreGoalMax - scoreGoalMin) + scoreGoalMin;
+}
+
+
 function updateScore(score, amount){
 	return score + amount;
 }
@@ -41,7 +54,13 @@ function renderRunningScore(winCount, lossCount) {
 }
 
 
+// SET THE WIN SCORE AND VALUE OF THE CRYSTAL CELLS: 
+randomizeWinScore();
+randomizeCells();
+
+
 // ON CLICK EVENT OF CRYSTALS CELLS: 
+
  $(".crystals-cells").on("click", function(event) {
 
  	var id = event.currentTarget.id;
@@ -92,6 +111,11 @@ function renderRunningScore(winCount, lossCount) {
    		score = 0;
    		$('#active-score').html("ACTIVE SCORE: " + score);
 
+   		//Randomize cells and winScore
+   		randomizeCells();
+   		randomizeWinScore();
+
+
    	// If you lose...
    	} else if (checkWin(winScore, score) == "loss") {
    		console.log("you lost");
@@ -100,9 +124,13 @@ function renderRunningScore(winCount, lossCount) {
    		lossCount++; 
 		renderRunningScore(winCount, lossCount);
 
-   		// Reset the score to 0, print new active score
+   		// Reset the score to 0, print new active score, randomize cells
    		score = 0;
    		$('#active-score').html("ACTIVE SCORE: " + score);
+   		
+   		//Randomize cells and winScore
+   		randomizeCells();
+   		randomizeWinScore();
 
    	// If 'continue', nothing happens 
    	} else if (checkWin(winScore, score) == "continue") {
