@@ -1,11 +1,8 @@
 $(document).ready(function(){
 
-// TO DO: 
-// write a function for updating the active scores
 
+// VARIABLES:
 
-
-// Generate a random number, store it in a variable
 var score = 0;
 var winCount = 0;
 var lossCount = 0;
